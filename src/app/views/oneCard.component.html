@@ -1,0 +1,9 @@
+<div class="uneCarte" [ngStyle]="{'background-color':lcard.bgColor, 'color':lcard.fontColor}">
+    <div id="cross"  (click)="remove(lcard.id)">X</div>
+                <h1 id="nom">{{lcard.nom}}&nbsp;&nbsp;<span id="prenom">{{lcard.prenom}}</span></h1>
+                <p id=ladresse><span id=adresse>{{lcard.adresse}}</span>&nbsp;&nbsp;<span id=codePostal>{{lcard.codePostal}}</span>&nbsp;&nbsp;<span id=ville>{{lcard.ville}}</span></p>
+                <h3 id="mail"><i>{{lcard.mail}}</i></h3>
+                <h4 id="telephone"><i>Tel:&nbsp;&nbsp;{{lcard.telephone}}</i></h4>
+                <span id="image"><img src="assets/{{lcard.lienImage}}" id='vueimage'></span>
+
+</div>

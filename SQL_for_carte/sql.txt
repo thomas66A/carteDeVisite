@@ -1,0 +1,62 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.5.2
+-- https://www.phpmyadmin.net/
+--
+-- Client :  localhost:8889
+-- Généré le :  Mar 14 Novembre 2017 à 17:01
+-- Version du serveur :  5.6.35
+-- Version de PHP :  7.1.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Base de données :  `carte`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `carte`
+--
+
+CREATE TABLE `carte` (
+  `id` int(11) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `prenom` varchar(255) NOT NULL,
+  `telephone` varchar(255) NOT NULL,
+  `adresse` varchar(255) NOT NULL,
+  `lienImage` varchar(255) NOT NULL,
+  `mail` varchar(255) NOT NULL,
+  `bgColor` varchar(255) NOT NULL,
+  `fontColor` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+--
+-- Contenu de la table `carte`
+--
+
+INSERT INTO `carte` (`id`, `nom`, `prenom`, `telephone`, `adresse`, `lienImage`, `mail`, `bgColor`, `fontColor`) VALUES
+(1, 'ohare', 'thomas', '0600000000', '25 rue des fleurs 66000 perpignan', 'tete.png', 'toto@toto.fr', 'rgba(255, 156, 126, 1)', '#000000'),
+(11, 'ohare', 'thomas', '0600112233', 'dfsdfgsdfshs,66300sdfgf', 'tete5.png', 'sdfgsdf@fdf.fr', 'rgba(226, 255, 255, 1)', 'rgba(150, 0, 0, 1)'),
+(14, 'Bridou', 'justin', '0641526396', 'Rue du fromage, normandie', 'tete1.png', 'bridou@justin', 'rgba(196, 92, 106, 1)', 'rgba(255, 255, 255, 1)');
+
+--
+-- Index pour les tables exportées
+--
+
+--
+-- Index pour la table `carte`
+--
+ALTER TABLE `carte`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables exportées
+--
+
+--
+-- AUTO_INCREMENT pour la table `carte`
+--
+ALTER TABLE `carte`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;

@@ -1,0 +1,52 @@
+
+#globalTitle{
+    width:100%;
+    position:relative;
+    top:0px;
+    left:0px;
+    margin:auto;
+    padding:0px;
+    background-color:rgb(231, 217, 182);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom:1px solid rgb(141, 82, 4);
+    box-shadow: 0px 11px 15px -3px #CAC085;
+}
+#titles{
+    margin:0px;
+    padding:0px;
+}
+#globalTitle #titles h1{
+    margin-left :20px;
+    margin-top:10px;
+    font-family: sans-serif;
+    color:rgb(141, 82, 4);
+    
+}
+#globalTitle #titles h2{
+    margin-left :20px;
+    margin-top:10px;
+    font-family: sans-serif;
+    color:rgb(141, 82, 4);
+    
+}
+#globalTitle nav{
+    font-family: sans-serif;
+    color:rgb(141, 82, 4);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#globalTitle nav a{
+    font-family: sans-serif;
+    text-decoration: none;
+    background-color:rgb(141, 82, 4);
+    color:rgb(231, 217, 182);
+    height:30px;
+    border-radius:15px 0px 0px 15px;
+    padding-left:30px;
+    padding-right:10px;
+    line-height: 31px;
+}

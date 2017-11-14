@@ -1,0 +1,68 @@
+<div id="mybackground">
+    <a routerLink="/home" id="back">X</a>
+    <h1>CREER UNE CARTE</h1>
+    
+    <div id="carteProto" [changeBackground]="color.toString()"  [style.background-color]="getStyle(color.toString())">
+            
+            <h1 id="nom"  [couleurLettre]="lettre.toString()" [style.color]="getLetterColor(lettre.toString())">{{nom}}&nbsp;&nbsp;<span id="prenom"  [couleurLettre]="lettre.toString()">{{prenom}}</span></h1>
+            <p id=ladresse [couleurLettre]="lettre.toString()"><span id=adresse>{{adresse}}</span>
+            <h3 id="mail" [couleurLettre]="lettre.toString()"><i>{{mail}}</i></h3>
+            <h4 id="telephone" [couleurLettre]="lettre.toString()"><i>Tel:&nbsp;&nbsp;{{telephone}}</i></h4>
+            <span id="image" *ngIf="lien"><img src="assets/{{lien}}" id='vueimage'></span>
+    </div>
+    <div id="form">
+        <div id="gauche">
+            <label>
+                    <span>Nom :</span>
+                    <input type="text" name="nom" [(ngModel)]="nom" #inputNom/>
+            </label>
+            <label>
+                    <span>Prenom :</span>
+                    <input type="text" name="prenom" [(ngModel)]="prenom" #inputPrenom/>
+            </label>
+            <label>
+                    <span>Telephone :</span>
+                    <input type="text" name = "telephone" [(ngModel)]="telephone"  #inputTelephone/>
+            </label>
+            </div>
+
+            <div id="droite" >
+                    <label>
+                            <span>Adresse :</span>
+                            <input type="text" name="adresse" #inputAdresse [(ngModel)]="adresse"/>
+                    </label>
+                    <label>
+                            <span>Email :</span>
+                            <input type="text" name="mail" #inputMail [(ngModel)]="mail"/>
+                    </label>
+                    <label>
+                            <span>Photo :</span>
+                              <select id="photos" #inputLien [(ngModel)]="lien">
+                                        <option value="tete.png">Tete</option>
+                                        <option value="tete1.png">Tete1</option>
+                                        <option value="tete2.png">Tete2</option>
+                                        <option value="tete3.png">Tete3</option>
+                                        <option value="tete4.png">Tete4</option>
+                                        <option value="tete5.png">Tete5</option>
+                                        <option value="tete6.png">Tete6</option>
+                                </select>
+                                      
+                    </label>
+                    </div>
+    </div>
+    <div id="couleur">
+    <div id="couleurFond" class="a">
+                <h6>La couleur du fond de la carte</h6>
+        <label>R&nbsp;&nbsp;</label><input type="range" min=0 max=255 [(ngModel)]="color.red" /><br>
+        <label>G&nbsp;&nbsp;</label><input type="range" min=0 max=255 [(ngModel)]="color.green" /><br>
+        <label>B&nbsp;&nbsp;</label><input type="range" min=0 max=255 [(ngModel)]="color.blue" />
+    </div>
+    <div id="couleurlettre" class="a">
+            <h6>La couleur du lettrage</h6>
+        <label>R&nbsp;&nbsp;</label><input type="range" min=0 max=255 [(ngModel)]="lettre.red" /><br>
+        <label>G&nbsp;&nbsp;</label><input type="range" min=0 max=255 [(ngModel)]="lettre.green" /><br>
+        <label>B&nbsp;&nbsp;</label><input type="range" min=0 max=255 [(ngModel)]="lettre.blue" />
+    </div>
+    </div>
+      <button id="valide" (click)="getValues(inputNom.value, inputPrenom.value, inputTelephone.value, inputAdresse.value, inputLien.value, inputMail.value, color.toString(), lettre.toString())">VALIDEZ</button>  
+</div>

@@ -1,0 +1,206 @@
+#mybackground{
+    background-color:rgba(0, 0, 0, 0.65);
+    position:fixed;
+    margin:0px;
+    padding:0px;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+#mybackground h1{
+    
+    font-family: sans-serif;
+    color:white;
+    text-align:center;
+    text-shadow:6px 6px 12px black;
+}
+#carteProto{
+    position:relative;
+    padding:10px;
+    width:17cm;
+    height:11cm;
+    background-color:white;
+    margin:auto;
+    box-shadow: 10px 11px 15px -3px black;
+}
+#back{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:50px;
+    height:50px;
+    border-radius:29px;
+    background-color:red;
+    border:4px solid white;
+    color:white;
+    font-size:2.5em;
+    line-height:52px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align:center;
+    text-decoration:none;
+    box-shadow: 10px 11px 15px -3px black;
+}
+#form{
+    display:flex;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top:20px;
+    padding:20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width:17cm;
+    border-radius: 30px;
+    box-shadow: 10px 11px 15px -3px black;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+#gauche{
+    display:flex;
+    margin:auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#droite{
+    display:flex;
+    margin:auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#gauche label, #droite label{
+    height:30px;
+    width:300px;
+    display:flex;
+    margin:auto;
+    margin-bottom:15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:white;
+    font-family: sans-serif;
+}
+#gauche label span, #droite label span{
+    line-height: 61px;
+}
+#gauche label input[type="text"], #droite label input[type="text"], #droite label select{
+    width:150px;
+    height:26px;
+    border-radius:10px;
+    box-shadow: inset 3px 3px 3px black;
+    font-size: 1em;
+    padding:5px;
+    
+}
+
+#carteProto h1, div h2, div h3, div p{
+    margin:0px;
+    padding:0px;
+    font-size: 2em;
+    font-family: sans-serif;
+    z-index:4;
+}
+#carteProto #nom{
+    font-size: 2.2em;
+    position:absolute;
+    top:62px;
+    text-shadow: initial;
+    color:black;
+}
+#carteProto #vueimage{
+    width:40%;
+    position:absolute;
+    top:0px;
+    right:0px;
+    z-index:3;
+}
+ 
+#carteProto #mail{
+    width:100%;
+    text-align:center;
+    position:absolute;
+    bottom:5px;
+    font-weight: 300;
+}
+#carteProto #ladresse{
+    margin:0px;
+    width:100%;
+    text-align:center;
+    position:absolute;
+    bottom:50px; 
+    font-family: sans-serif;
+    font-weight: 400;
+}
+#carteProto #telephone{
+    margin:0px;
+    width:100%;
+    font-size: 2em;
+    position:absolute;
+    bottom:163px; 
+    font-family: sans-serif;
+    font-weight: 300;
+}
+#couleur{
+    background-color: rgba(0, 0, 0, 0.65);
+    padding:20px;
+    padding-top:0px;
+    margin-top:20px;
+    width:90%;
+    max-width:17cm;
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 10px 11px 15px -3px black;
+    
+}
+.a{
+    color:white;
+}
+.a h6{
+    margin:10px;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+input:focus{ 
+    outline-color: transparent;
+  }
+  input[type="range"]{ 
+    -webkit-appearance:none; 
+    -moz-apperance:none; 
+    height: 6px; 
+    background-color: #b6b6b6;
+    outline-color: transparent;  
+  }
+  input::-webkit-slider-thumb{
+    -webkit-appearance:none; 
+    -moz-apperance:none; 
+    width:16px; 
+    height:20px;
+    -webkit-border-radius:15px; 
+    -moz-border-radius:15px; 
+    -ms-border-radius:15px; 
+    -o-border-radius:15px; 
+    border-radius:15px;
+    background-color: #000302;
+    overflow: visible;
+  }
+  #valide{
+      width:300px;
+      height:30px;
+      position:relative;
+      left:50%;
+      margin-left:-150px;
+      margin-top: 20px;
+      border-radius:15px;
+      border:3px solid black;
+      font-size:1em;
+      font-weight: bold;
+      line-height: 22px;
+      box-shadow: 10px 11px 15px -3px black;
+  }
+  select{
+      height:36px !important;
+      width:163px !important;
+  }

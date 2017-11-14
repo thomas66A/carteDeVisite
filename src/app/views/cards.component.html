@@ -1,0 +1,9 @@
+<!-- <app-cards> -->
+<div class="lesCartes" *ngIf="cards">
+  
+    <div class="cards" *ngFor="let card of cards">
+        <app-oneCard [lcard]="card" (delete)="delete($event)"></app-oneCard>
+    </div>
+  
+</div>
+<!-- </app-cards> -->
